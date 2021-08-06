@@ -31,7 +31,7 @@ You may run commands like `ls` and `ps` to observe that the process you are does
 
 There is network connectivity between the container's namespace and the external namespace. You can run a server inside the container as `$ cd var/shared_folder && ./server <port_number>` and a client in the parent as `$ ./client <ip_in> <port_number>)` to see some communication.
 
-You can run the hungry program in the container as `$ cd vaqr/shared_folder && ./hungry`. The program requests a lot of memory from the kernel, and after a while is denied and killed becuase the container was initialized with a memory restriction (using cgroups). 
+You can run the hungry program in the container as `$ cd var/shared_folder && ./hungry`. The program requests a lot of memory from the kernel, and after a while is denied and killed becuase the container was initialized with a memory restriction (using cgroups). 
 
 
 This project was done for a course assignment of [CS 695: Virtualization and Cloud Computing](https://www.cse.iitb.ac.in/~cs695/index.html) which I did in my third year at IITB. Details about the assignment details can be found [here](https://www.cse.iitb.ac.in/~cs695/pa/pa3.html). Much of this project is based on [this](https://cesarvr.github.io/post/2018-05-22-create-containers/) blog post. [This](https://ericchiang.github.io/post/containers-from-scratch/) was also a useful resource.  
